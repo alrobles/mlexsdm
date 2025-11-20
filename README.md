@@ -1,15 +1,9 @@
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
 # xsdmMle
-
-<!-- badges: start -->
 
 [![Codecov test
 coverage](https://codecov.io/gh/alrobles/xsdmMle/graph/badge.svg)](https://app.codecov.io/gh/alrobles/xsdmMle)
-<!-- badges: end -->
 
-The goal of xsdmMle is to fit
+The goal of xsdmMle is to fit species distribution models using maximum likelihood estimation. This R package provides tools for modeling species occurrence patterns in relation to environmental variables across time and space, with support for complex likelihood functions and parameter optimization.
 
 ## Installation
 
@@ -54,8 +48,6 @@ occ <- sp_virtual_example$presence
 # we want to run in parallel
 optim_df <- optim_mll(envdat, occ, numstarts = 50, parallel = TRUE)
 ```
-
-\`\`\`
 
 Then we got a data frame with the maximum likelihood estimation for each
 set of initial starting points in the optimization. We have this on the
