@@ -69,3 +69,17 @@ optim_df <- optim_mll(envdat, occ, numstarts = 50, parallel = TRUE)
 Then we got a data frame with the maximum likelihood estimation for each set of 
 initial starting points in the optimization. We have this on the biological scale of
 parameters (Is the unconstrained space of parameters where the optimizer found the maximum of the function).
+
+## Code Sharing
+
+To share all source code in a single plain text file, you can use the provided consolidation scripts:
+
+```bash
+# Using Python
+python3 generate_code_text.py
+
+# Or using R
+Rscript generate_code_text.R
+```
+
+This will generate `all_code.txt` containing all R and C++ source files. See [CODE_SHARING.md](CODE_SHARING.md) for more details.
