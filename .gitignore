@@ -1,6 +1,11 @@
 # Generated code consolidation file
 all_code.txt
 
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
 # R specific ignores
 .Rproj.user
 .Rhistory
